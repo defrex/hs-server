@@ -1,7 +1,7 @@
 {
   "default": {
-    "serverUri": null,
-    "clientUri": null,
+    "serverUri": "http://localhost:8080",
+    "clientUri": "http://localhost:3000",
     "compressApiLibrary": false,
     "phoneNumbers": [],
     "noemail": true,

@@ -12,7 +12,7 @@
 var keyRegex = /^(\w+)\/(\w+)(=(\w+)\.(\w+))?$/
 
 var normalRegex = /^(\w+)\/(\w+)$/;
-var queryRegex = /^(\w+)\((\w+)\=(\w+\/\w+)\)/$;
+var queryRegex = /^(\w+)\((\w+)\=(\w+\/\w+)\)$/;
 
 var Key = function(orig) { this.orig = orig };
 Key.prototype.toString = function() { return this.orig };

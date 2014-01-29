@@ -76,7 +76,7 @@ var ensureIndex = function(collection, field, type) {
 var db;
 
 var init = function(host, port, name, callback) {
-  db = new mongo.Db(name, new mongo.Server(host, port, {}));
+  db = new mongo.Db(name, new mongo.Server(host, port), {journal: true, w: 1, fsync: true});
   db.open(function(err, p_client) {
     // If we get an error opening the database, we need to fail
     // hard because there's nothing else to do if we can't read/store
